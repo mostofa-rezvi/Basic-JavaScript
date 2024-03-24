@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div>
+        <form id="form" action="">
+
+            <label for="">Name :</label> <br>
+            <input type="text" name="name" id="name" placeholder="Enter your name"> <br>
+
+            <label for="">Email :</label> <br>
+            <input type="text" name="email" id="email" placeholder="Enter your Email"> <br>
+
+            <label for="">Password :</label> <br>
+            <input type="password" name="password" id="password" placeholder="*****"> <br>
+
+            <label for="">Round : </label>
+            <select name="round" id="round">
+                <option value="Select Round">-- Select Round Number --</option>
+                <option value="56">56</option>
+                <option value="57">57</option>
+                <option value="58">58</option>
+                <option value="59">59</option>
+                <option value="60">60</option>
+                <option value="61">61</option>
+                <option value="62">62</option>
+            </select> <br>
+
+            <label for="">Gender : </label>
+            <input type="radio" value="Male" name="sex"> Male
+            <input type="radio" value="Female" name="sex"> Female
+            <input type="radio" value="Others" name="sex"> Others <br>
+
+            <label for="">Education : </label> <br>
+            <input type="checkbox" name="education" id="" value="SSC"> SSC <br>
+            <input type="checkbox" name="education" id="" value="HSC"> HSC <br>
+            <input type="checkbox" name="education" id="" value="Honours"> Honours <br>
+            <input type="checkbox" name="education" id="" value="Masters"> Masters <br>
+
+            <label for="">Courses : </label> <br>
+            <input type="checkbox" name="courses" id="" value="NT"> NT <br>
+            <input type="checkbox" name="courses" id="" value="DDD"> DDD <br>
+            <input type="checkbox" name="courses" id="" value="ESAD"> ESAD <br>
+            <input type="checkbox" name="courses" id="" value="JEE"> JEE <br>
+            <input type="checkbox" name="courses" id="" value="GAV"> GAV <br>
+
+            <label for="">Location : </label>
+            <select name="location" id="location">
+                <option value="Select One">--- Select One ---</option>
+                <option value="Dhanmondi">Dhanmondi</option>
+                <option value="Mirpur">Mirpur</option>
+                <option value="Khilgaon">Khilgaon</option>
+                <option value="Banani">Banani</option>
+                <option value="Azimpur">Azimpur</option>
+            </select> <br>
+
+            <label for="">Remarks </label> <br>
+            <textarea name="remarks" id="remarks" placeholder="Write about yourself..." cols="40" rows="4"></textarea>
+            <br> <br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    
+    <script src="formValidation.js"></script>
+
+</body>
+
+</html>

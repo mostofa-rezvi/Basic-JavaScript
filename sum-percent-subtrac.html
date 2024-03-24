@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Percent Subtrac</title>
+</head>
+<body>
+    
+    <label for="">Input first number: </label>
+    <input type="text" id="number1">
+    <br> <br>
+    <label for="">Input second number: </label>
+    <input type="text" id="number2">
+    <br> <br>
+
+    <input type="submit" value="Summation" onclick="doSummation()">
+    <input type="submit" value="Subtraction" onclick="doSubtraction()">
+    <input type="submit" value="Percentage" onclick="doPercentage()">
+
+
+    <script>
+
+        function doSummation(){
+            let number01 = document.getElementById("number1").value;
+            let number02= document.getElementById("number2").value;
+
+            let num01ToInt=parseInt(number01);
+            let num02ToInt=parseInt(number02);
+
+            let summation=num01ToInt+num02ToInt;
+
+            document.write(summation);
+        }
+
+        function doSubtraction(){
+            let number01=document.getElementById("number1").value;
+            let number02=document.getElementById("number2").value;
+
+            let num01ToInt=parseInt(number01);
+            let num02ToInt=parseInt(number02);
+
+            let subtraction=num01ToInt-num02ToInt;
+
+            document.write(subtraction);
+        }
+
+        function doPercentage(){
+            let number01=document.getElementById("number1").value;
+            let number02=document.getElementById("number2").value;
+
+            let num01ToInt=parseInt(number01);
+            let num02ToInt=parseInt(number02);
+
+            let percentage=(num01ToInt/num02ToInt)*1/100;
+
+            document.write(percentage);
+        }
+
+
+
+    </script>
+
+
+
+</body>
+</html>

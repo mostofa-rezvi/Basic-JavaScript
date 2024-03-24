@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+</head>
+<body>
+    <label for="">Input a Number : </label>
+    <input type="text" name="number" id="number">
+
+    <input type="submit" value="Check" onclick="timeTable()">
+
+    <script>
+        function timeTable(){
+            const inputNumber=document.getElementById("number").value;
+            let number=1;
+
+            while(number<=10){
+                document.write(inputNumber+"X"+number+"="+inputNumber*number+"<br>");
+
+                number++;
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

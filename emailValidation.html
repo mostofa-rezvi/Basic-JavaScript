@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<body>
+    <div>
+        <label for="">Email Address : </label>
+        <input type="text" id="email" name="email" placeholder="Enter your mail address"> <br> <br>
+
+        <input type="submit" value="Check" onclick="emailValidation()">
+
+    </div>
+
+    <script>
+        function emailValidation(){
+            let userInput=document.getElementById("email").value;
+            
+            let regEx= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if(regEx.test(userInput)){
+                alert("Your Email Address is Correct.");
+            }
+            else{
+                alert("Your Email Address is Wrong.");
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

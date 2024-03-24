@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babble Sort</title>
+</head>
+
+<body>
+    <script>
+        let oldArray = [50, 40, 90, 80, 20, 10, 50, 40, 60, 65, 90, 40, 10, 30];
+
+        document.write("OldArray : " + oldArray);
+
+        for (let first = 0; first < oldArray.length; first++) {
+
+            for (let second = 0; second < oldArray.length; second++) {
+                
+                if (oldArray[second] > oldArray[second + 1]) {
+
+                    let temp = oldArray[second];
+
+                    oldArray[second] = oldArray[second + 1];
+                    
+                    oldArray[second + 1] = temp;
+                }
+            }
+        }
+
+        document.write("<br> <br> NewArray : " + oldArray);
+
+    </script>
+
+</body>
+
+</html>

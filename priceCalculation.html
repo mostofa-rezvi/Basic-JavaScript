@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Calculation</title>
+</head>
+
+<body>
+    <div>
+        <label for="">Unit Price : </label>
+        <input type="text" name="unitPrice" id="unitPrice" oninput="priceCalculation()"> <br> <br>
+
+        <label for="">Unit Quantity : </label>
+        <input type="text" name="unitQuantity" id="unitQuantity" oninput="priceCalculation()"> <br> <br>
+
+        <label for="">Total Price :</label>
+        <input type="text" name="totalPrice" id="totalPrice" readonly> <br> <br>
+
+        <label for="">Discount (%) : </label>
+        <input type="text" name="discount" id="discount" oninput="priceCalculation()"> <br> <br>
+
+        <label for="">Discount Amount : </label>
+        <input type="text" name="discountAmount" id="discountAmount" readonly> <br> <br>
+
+        <label for="">Actual Price : </label>
+        <input type="text" name="actualPrice" id="actualPrice" readonly> <br> <br>
+
+        <script>
+            function priceCalculation() {
+                let unitPrice = parseInt(document.getElementById("unitPrice").value) || 0;
+
+                let unitQuantity = parseInt(document.getElementById("unitQuantity").value) || 0;
+
+                let discount = parseInt(document.getElementById("discount").value) || 0;
+
+                let totalPrice = unitPrice * unitQuantity;
+                document.getElementById("totalPrice").value = totalPrice.toFixed(2);
+
+                let discountAmount = totalPrice * (discount / 100);
+                document.getElementById("discountAmount").value = discountAmount.toFixed(2);
+
+                let actualPrice = totalPrice - discountAmount;
+                document.getElementById("actualPrice").value = actualPrice.toFixed(2);
+
+            }
+
+        </script>
+
+    </div>
+
+</body>
+
+</html>
