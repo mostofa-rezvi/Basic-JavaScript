@@ -1,0 +1,13 @@
+1. git lfs install
+2. git lfs track "*.zip"
+3. git add .gitattributes
+4. git add my-large-file.zip
+5. git commit -m "Add large file - Comments"
+6. git push
+
+
+branch:
+git branch -m main master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a
